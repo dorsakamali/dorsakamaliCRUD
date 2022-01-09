@@ -16,7 +16,8 @@ class PersonHelper
 
         $sql = "INSERT INTO person (firstName, lastName, username)
          VALUES ('$firstName','$lastName', '$username')";
-        $this->db->execQueryForInsert($sql);
+
+        return  $db->execQueryForInsert($sql);
 
         // if ($this->db->execQuery("INSERT INTO Persons (id, firstName, lastName,username) VALUES ($person->getId(), $person->getFirstName(), $person->getLastName(), $person->getUsername())")) {
         //     return true;
