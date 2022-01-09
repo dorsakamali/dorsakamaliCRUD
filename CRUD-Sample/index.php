@@ -4,20 +4,20 @@ use CRUD\Controller\PersonController;
 
 include ("loader.php");
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test";
+// $servername = "localhost";
+// $username = "root";
+// $password = " ";
+// $dbname = "dbname";
 // Create connection
-$db = mysqli_connect($servername, $username, $password, $dbname);
+//$db = mysqli_connect($servername, $username, $password, $dbname);
 
 // Check connection
-if (!$db) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-else {
-echo "Connected successfully";
-}
+// if (!$db) {
+//     die("Connection failed: " . mysqli_connect_error());
+// }
+// else {
+// echo "Connected successfully";
+// }
 
 $controller = new PersonController();
 $controller->switcher($_SERVER['REQUEST_URI'],$_REQUEST);
