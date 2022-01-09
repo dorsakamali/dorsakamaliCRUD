@@ -27,15 +27,11 @@ class DBConnector
      */
     public function connect() : void
     {
-
         $servername = "localhost";
         $username = "username";
-        $password = "password";
+        $password = " ";
         $dbname = "myDB";
-        // Create connection
         $this->db = mysqli_connect($servername, $username, $password, $dbname);
-
-        // Check connection
         if (!$this->db) {
             die("Connection failed: " . mysqli_connect_error());
         }
