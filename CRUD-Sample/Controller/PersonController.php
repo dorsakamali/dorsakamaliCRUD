@@ -16,7 +16,7 @@ class PersonController
                 break;
             case Actions::UPDATE:
                 $this->updateAction($request);
-                break;
+                break; 
             case Actions::READ:
                 $this->readAction($request);
                 break;
